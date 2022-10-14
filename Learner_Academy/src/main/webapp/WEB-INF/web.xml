@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Learner_Academy</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>AdminControlServelet</display-name>
+    <servlet-name>AdminControlServelet</servlet-name>
+    <servlet-class>Com.JavaProgramms.Admin.AdminControlServelet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminControlServelet</servlet-name>
+    <url-pattern>/AdminControlServelet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DbRetrive</display-name>
+    <servlet-name>DbRetrive</servlet-name>
+    <servlet-class>Com.JavaProgramms.Admin.DbRetrive</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DbRetrive</servlet-name>
+    <url-pattern>/DbRetrive</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TestServlet</display-name>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>Com.JavaProgramms.Admin.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
